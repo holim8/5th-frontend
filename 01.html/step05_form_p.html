@@ -1,0 +1,57 @@
+<h1>고객 만족도 설문조사</h1>
+
+<form action="#" method="post">
+    <p>
+        <label for="user-name">이름</label><br>
+        <input type="text" name="uname" id="user-name" required placeholder="이름을 입력하세요">
+    </p>
+
+    <p>
+        <label for="user-age">나이</label><br>
+        <input type="number" name="uage" id="user-age" min="1" max="100">
+    </p>
+
+    <p>
+        방문 경로<br>
+        <input type="radio" name="path" id="path-search" value="search">
+        <label for="path-search">검색 엔진</label><br>
+        <input type="radio" name="path" id="path-ad" value="ad">
+        <label for="path-ad">광고</label><br>
+        <input type="radio" name="path" id="path-ref" value="ref">
+        <label for="path-ref">지인 추천</label>
+    </p>
+
+    <p>
+        관심 주제 (복수 선택 가능)<br>
+        <input type="checkbox" name="topic" id="topic-tech" value="tech">
+        <label for="topic-tech">기술</label><br>
+        <input type="checkbox" name="topic" id="topic-design" value="design">
+        <label for="topic-design">디자인</label><br>
+        <input type="checkbox" name="topic" id="topic-marketing" value="marketing">
+        <label for="topic-marketing">마케팅</label>
+    </p>
+
+    <p>
+        <label for="frequency">방문 빈도</label><br>
+        <select name="freq" id="frequency">
+            <option value="" selected disabled>선택하세요</option>
+            <option value="daily">매일</option>
+            <option value="weekly">주 1회</option>
+            <option value="monthly">월 1회</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="feedback">추가 의견</label><br>
+        <textarea 
+            name="feedback" 
+            id="feedback" 
+            rows="5" 
+            cols="40" 
+            placeholder="개선 사항이나 의견을 자유롭게 작성해주세요"></textarea>
+    </p>
+
+    <p>
+        <button type="submit">제출하기</button>
+    </p>
+</form>
